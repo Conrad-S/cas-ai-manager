@@ -20,10 +20,9 @@
 This application simplifies connectivity and interaction with Azure OpenAI, eliminating the need to add complex code to applications and gateways.
 
 The application:
- - Handles connectivity to Azure OpenAI endpoints. The caller only needs to pass in the model name, model version, and desired region.
- - Handles calls to Azure OpenAI endpoints.
- - Enables the use of Semantic Kernel
- - Enables the use of Assistant API
+ - Handles connectivity and calls to Azure OpenAI endpoints. The caller only needs to pass in the model name, model version, and desired region.
+ - Handles and simplifies calls to Semantic Kernel
+ - Handles and simplifies  calls to Assistant API
 
 For example, once implemented, the only code needed to call an Azure OpenAI endpoint is as follows (example in C#):
 
