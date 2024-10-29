@@ -17,7 +17,7 @@
 
 **Project description**
 
-This is an Azure Container App that handles connectivity and calls to Azure OpenAI endpoints, eliminating the need to add complex code to applications and gateways.
+This is an application that handles connectivity and calls to Azure OpenAI endpoints, eliminating the need to add complex code to applications and gateways.
 
 The app:
  - Handles connectivity to Azure OpenAI endpoints. The caller only needs to pass in the model name, model version, and desired region.
@@ -37,6 +37,7 @@ var payload = new {modelName = "exampleModel", modelVersion = "v1", modelRegion 
     return await response.Content.ReadAsStringAsync();
 ```
 
+**Architecture**
+The application is implemented as a series of microservices deployed as an Azure Container App.
 
-**Features**
-TODO
+--- TODO...
