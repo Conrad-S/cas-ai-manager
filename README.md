@@ -27,7 +27,7 @@ The application:
 For example, once implemented, the only code needed to call an Azure OpenAI endpoint is as follows (example in C#):
 
 ```csharp
-var payload = new {modelName = "exampleModel", modelVersion = "v1", modelRegion = "eastus",
+var payload = new {modelName = "gpt-4o", modelVersion = "gpt-4-32k", modelRegion = "eastus",
     body = new {systemMessage = "You are a helpful assistant", userMessage = "How is the weather in Boston?"}
 };
 
