@@ -25,7 +25,7 @@ The app:
  - Enables the use of Semantic Kernel
  - Enables the use of Assistant API
 
-For example, once implemented, the code needed in a C# application to call an Azure OpenAI endpoint is as follows:
+For example, once implemented, the only code needed to call an Azure OpenAI endpoint is as follows (example in C#):
 
 ```csharp
 var payload = new {modelName = "exampleModel", modelVersion = "v1", modelRegion = "eastus",
