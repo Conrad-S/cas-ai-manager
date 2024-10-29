@@ -17,7 +17,7 @@
 
 **Project description**
 
-This application simplifies connectivity and calls to Azure OpenAI endpoints, eliminating the need to add complex code to applications and gateways.
+This application simplifies connectivity and interaction with Azure OpenAI, eliminating the need to add complex code to applications and gateways.
 
 The application:
  - Handles connectivity to Azure OpenAI endpoints. The caller only needs to pass in the model name, model version, and desired region.
