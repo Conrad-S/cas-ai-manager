@@ -1,0 +1,17 @@
+# Use the official Python image as the base
+FROM python:3.9
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY ../assistant-api-service/ .
+
+# Install any needed packages specified in requirements.txt
+RUN pip install -r requirements.txt
+
+# Make port 8083 available to the world outside this container
+EXPOSE 8083
+
+# Run assistant_api_service.py when the container launches
+CMD ["python", "assistant_api_service.py"]

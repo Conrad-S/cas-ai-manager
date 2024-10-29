@@ -1,0 +1,20 @@
+# Use the official Golang image as the base
+FROM golang:1.21.1
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the Go app files to the working directory
+COPY ai-orchestration-service/ ai-orchestration-service-cache/ ai-orchestration-service-webjob/ go.mod go.sum ./
+
+# Download dependencies
+RUN go mod download
+
+# Build the Go app
+RUN go build -o ai-orchestration-service ai-orchestration-service/main.go
+
+# Expose port 8081
+EXPOSE 8081
+
+# Command to run the executable
+CMD ["./ai-orchestration-service"]
