@@ -38,6 +38,11 @@ var payload = new {modelName = "exampleModel", modelVersion = "v1", modelRegion 
 ```
 
 **Architecture**
+
 The application is implemented as a series of microservices deployed as an Azure Container App.
+
+ - ai-orchestration service: This is the core service for interacting with Azure OpenAI endpoints.
+ - assistant-api-service: This service simplifies calls to the Assistant API. The service leverages the ai-orchestration-service to call Azure OpenAI endpoints.
+ - semantic-kernel-service: This service service simplifies calls to Semantic Kernel. The service leverages the ai-orchestration-service to call Azure OpenAI endpoints.
 
 --- TODO...
